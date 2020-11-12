@@ -7,5 +7,36 @@ body {
   background: black;
   font-family: 'Caveat', cursive;
   color: #f9a337;
-  font-size: 60px;
+  font-size: 32px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.bg {
+  width: 375px;
+  height: 800px;
+
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.page1__bg {
+  background: url(/img/test_p1.jpg);
+  background-size: cover;
+}
+
+.page2__bg {
+  background: url(/img/test_p2.jpg);
+  background-size: cover;
+}
+
+.page3__bg {
+  background: url(/img/test_p3.jpg);
+  background-size: cover;
+}
+
+.page1__text {
+  font-weight: 400;
 }
