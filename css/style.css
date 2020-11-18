@@ -14,27 +14,14 @@ body {
   text-align: center;
 }
 
-.bg {
-  width: 375px;
-  height: 800px;
-
-  display: table-cell;
-  vertical-align: bottom;
+.block {
 }
-
-.page1__bg {
-  background: url(/img/test_p1.jpg);
-  background-size: cover;
-}
-
-.page2__bg {
-  background: url(/img/test_p2.jpg);
-  background-size: cover;
-}
-
-.page3__bg {
-  background: url(/img/test_p3.jpg);
-  background-size: cover;
+.bg__page {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: url(/img/test_p1.jpg) no-repeat;
+  background-size: contain;
 }
 
 .page1__text {
