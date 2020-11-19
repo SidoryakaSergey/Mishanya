@@ -22,8 +22,15 @@ body {
   height: 100vh;
   background: url(/img/test_p1.jpg) no-repeat;
   background-size: contain;
+  background-attachment: fixed;
 }
 
 .page1__text {
   font-weight: 400;
+}
+
+#showScroll {
+  position: fixed;
+  left: 0;
+  top: 0;
 }
