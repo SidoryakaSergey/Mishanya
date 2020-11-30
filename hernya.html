@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const books = [
+        {
+          author: 'Скотт Бэккер',
+          name: 'Тьма, что приходит прежде',
+          price: 70,
+        },
+        {
+          author: 'Скотт Бэккер',
+          name: 'Воин-пророк',
+        },
+        {
+          name: 'Тысячекратная мысль',
+          price: 70,
+        },
+        {
+          author: 'Скотт Бэккер',
+          name: 'Нечестивый Консульт',
+          price: 70,
+        },
+        {
+          author: 'Дарья Донцова',
+          name: 'Детектив на диете',
+          price: 40,
+        },
+        {
+          author: 'Дарья Донцова',
+          name: 'Дед Снегур и Морозочка',
+        },
+      ];
+      const ul = document.createElement('ul');
+      const booksFiltred = books.filter((el) => {
+        if (Object.keys(el).length < 3) {
+          console.error('Не хватает полей!');
+          return false;
+        }
+        return true;
+      });
+
+      const li = booksFiltred.map((el) => {
+        let str = '<li>';
+        for (let key in el) {
+          str = str + ' ' + el[key];
+        }
+        return str + '$. </li>';
+      });
+
+      ul.innerHTML = li.join(' ');
+      document.body.append(ul);
+    </script>
+  </body>
+</html>

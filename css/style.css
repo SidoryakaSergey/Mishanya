@@ -23,6 +23,8 @@ body {
   background: url(/img/test_p1.jpg) no-repeat;
   background-size: contain;
   background-attachment: fixed;
+
+  transition-duration: 1s;
 }
 
 .page1__text {
