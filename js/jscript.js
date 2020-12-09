@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 console.log('work');
 
 const bg = document.querySelector('.bg__page');
@@ -18,3 +19,6 @@ window.addEventListener('scroll', function () {
     bg.style.backgroundAttachment = 'fixed';
   }
 });
+=======
+console.log('Work');
+>>>>>>> 105d38bda2d044e1bee9d6583b4a627faa0c7395
